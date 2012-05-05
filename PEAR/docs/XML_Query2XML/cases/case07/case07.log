@@ -1,0 +1,13 @@
+Apr 18 19:02:48 Query2XML [info] QUERY: SELECT
+        *
+     FROM
+        artist
+     ORDER BY
+        artistid
+Apr 18 19:02:48 Query2XML [info] DONE
+Apr 18 19:02:48 Query2XML [info] QUERY: SELECT * FROM album WHERE artist_id = ?; DATA:1
+Apr 18 19:02:48 Query2XML [info] DONE
+Apr 18 19:02:48 Query2XML [info] QUERY: SELECT * FROM album WHERE artist_id = ?; DATA:2
+Apr 18 19:02:48 Query2XML [info] DONE
+Apr 18 19:02:48 Query2XML [info] QUERY: SELECT * FROM album WHERE artist_id = ?; DATA:3
+Apr 18 19:02:48 Query2XML [info] DONE

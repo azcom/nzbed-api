@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="AllTests.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="testBasic_apiVersion.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="testBasic_attributesToString.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="testBasic_collapseEmptyTags.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="testBasic_createCDataSection.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="testBasic_createComment.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="testBasic_createEndElement.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="testBasic_createStartElement.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="testBasic_createTag.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="testBasic_createTagFromArray.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="testBasic_getDocTypeDeclaration.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="testBasic_getXmlDeclaration.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="testBasic_isValidName.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="testBasic_raiseError.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="testBasic_replaceEntities.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="testBasic_reverseEntities.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="testBasic_splitQualifiedName.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="testBug_4950.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="testBug_5392.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+</dwsync>

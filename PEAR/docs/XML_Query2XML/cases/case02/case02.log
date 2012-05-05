@@ -1,0 +1,9 @@
+Apr 18 19:01:01 Query2XML [info] QUERY: SELECT
+        *
+     FROM
+        artist
+        LEFT JOIN album ON album.artist_id = artist.artistid
+     ORDER BY
+        artist.artistid,
+        album.albumid
+Apr 18 19:01:01 Query2XML [info] DONE

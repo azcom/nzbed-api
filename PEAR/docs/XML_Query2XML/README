@@ -1,0 +1,130 @@
+XML_Query2XML
+=============
+Version: $Id: README,v 1.13 2008/04/19 09:36:04 lukasfeiler Exp $
+
+1. Overview
+2. Contents of this package
+3. Testing
+4. ChangeLog
+5. About the author
+6. Copyright Notice
+
+
+1. Overview
+-----------
+XML_Query2XML allows you to transform the records retrieved
+with one or more SQL SELECT queries into XML data. Very simple
+to highly complex transformations are supported. Is was written
+with performance in mind and can handel large amounts of data.
+
+Another thing you will find useful is XML_Query2XML's capabilities
+of Profiling and Performance Tuning.
+
+
+2. Contents of this package
+---------------------------
++---cases ............... Case studies; will be installed in $PHP_PEAR_DOC_DIR
+¦   +---case01 .......... Case 01: simple SELECT with getFlatXML
+¦   +---case02 .......... Case 02: LEFT JOIN
+¦   +---case03 .......... Case 03: Two SELECTs instead of a LEFT JOIN
+¦   +---case04 .......... Case 04: Case 03 with all the bells and whistles
+¦   +---case05 .......... Case 05: three LEFT JOINs
+|   +---case06 .......... Case 06: BIG join over 10 tables
+|   +---case07 .......... Case 07: Case 03 revisited: Simplifications with
+|   |                     Asterisk Shortcuts
+|   +---case08 .......... Case 08: Case 06 revisited: Making use of Mappers
++---XML ................. CONTAINS THE ACTUAL Query2XML.php that
+|                         will be installed in $PHP_PEAR_INSTALL_DIR/XML/
++---tests ............... contains 239 phpt unit tests; all will be installed
+                          in $PHP_PEAR_TEST_DIR/XML_Query2XML/tests. Please
+                          see 3. Testing.
+
+
+3. Testing
+----------
+XML_Query2XML can be tested with different drivers and different data sources
+(databases and LDAP directories). The most straightforward way to run the unit
+tests is by using the following command:
+
+ `pear run-tests -p XML_Query2XML'
+
+This will use the MDB2 driver with an SQLite 2 database. For LDAP functionality
+the Net_LDAP2 driver will be used to access an LDAP directory on
+localhost, port=389, version=3, starttls=0 without a binddn or bindpw.
+
+To change the above mentioned behaviour you can use the following environment variables.
+(Note: make sure the php.ini setting 'variables_order' also contains 'E' for Environment.)
+- PHP_PEAR_XML_QUERY2XML_TEST_DBLAYER: the name of the database abstraction layer
+  (and corresponding driver) to use. Valid values are 'MDB2', 'DB', 'PDO', 'ADOdbDefault',
+  'ADOdbException' and 'ADOdbPEAR'. The default is 'MDB2'.
+- PHP_PEAR_XML_QUERY2XML_TEST_DSN: the DSN to connect to the database. Please see
+  http://pear.php.net/manual/en/package.database.mdb2.intro-dsn.php for the format
+  to use. Examples would be
+  * mysql://root@localhost/Query2XML_Tests
+  * pgsql://postgres:test@localhost/query2xml_tests
+  * sqlite:///$PHP_PEAR_TEST_DIR/XML_Query2XML/tests/Query2XML_Tests.sq2
+  The default is the last mentioned example - this should work out of the box
+  on most systems.
+- PHP_PEAR_XML_QUERY2XML_TEST_LDAPLAYER: whether to use PEAR Net_LDAP or
+  PEAR Net_LDAP2. Valid values are 'LDAP' and 'LDAP2'. The default is 'LDAP2'.
+- PHP_PEAR_XML_QUERY2XML_TEST_LDAPCONFIG: a comma separated list of key
+  value pairs that specify how to connect to the LDAP directory. Please
+  see http://pear.php.net/manual/en/package.networking.net-ldap.connecting.php
+  for a list of valid keys. The default is
+  host=localhost,port=389,version=3,starttls=0,binddn=,bindpw=
+
+If you want to run the unit tests with MySQL or PostgreSQL, you need to:
+- run the MySQL DDL from $PHP_PEAR_TEST_DIR/XML_Query2XML/tests/Query2XML_Tests.sql:
+   `mysql -u root -p < $PHP_PEAR_TEST_DIR/XML_Query2XML/tests/Query2XML_Tests.sql`
+  or the PostgreSQL DDL from $PHP_PEAR_TEST_DIR/XML_Query2XML/tests/Query2XML_Tests.psql:
+   `psql -U postgres < $PHP_PEAR_TEST_DIR/XML_Query2XML/tests/Query2XML_Tests.psql`  
+- Set the environment variable PHP_PEAR_XML_QUERY2XML_TEST_DSN (see above).
+
+After installation $PHP_PEAR_TEST_DIR/XML_Query2XML/tests will contain the following
+(all paths relative to $PHP_PEAR_TEST_DIR/XML_Query2XML/tests):
+
+./Query2XML_Tests.sql ........... the MySQL DDL required to run the unit tests
+./Query2XML_Tests.psql .......... the PosgreSQL DDL required to run the unit tests
+./Query2XML_Tests.sq2 ........... the SQLite 2 database used by default
+./XML_Query2XML_ISO9075Mapper ... unit tests for XML_Query2XML_ISO9075Mapper
+./XML_Query2XML/ ................ phpt unit tests for XML_Query2XML
+./XML_Query2XML/AllDBLayers ..... phpt unit tests for XML_Query2XML using database
+                                  related drivers
+./XML_Query2XML/LDAP ............ phpt unit tests for XML_Query2XML using Net_LDAP
+                                  or Net_LDAP2
+./XML_Query2XML/NoDBLayer ....... phpt unit tests not using any driver
+
+Each of the ./XML_Query2XML/*/ directories contains subdirectories named
+like the class methods; the directories contain phpt unit tests for
+the respective method.
+
+If a specific database or LDAP directory abstraction layer
+(MDB2/DB/ADOdb/PDO/Net_LDAP/Net_LDAP2) is not installed
+the respective tests will be skipped. If I18N_UnicodeString is not installed
+all tests for XML_Query2XML_ISO9075Mapper will be skipped. Also all tests
+that require a database or LDAP connection will be skipped if the connection
+fails.
+
+
+4. ChangeLog
+------------
+Beginning with v0.6.0 the development of XML_Query2XML was moved from sourceforge.net
+to cvs.php.net. Therefore you will find two ChangeLog files:
+
+ChangeLog-until-v0.6.0 ....... ChangeLog entries from cvs.sourceforge.net
+                               (until v0.6.0)
+ChangeLog .................... ChangeLog entries from cvs.php.net
+
+
+5. About the author
+-------------------
+Please see http://www.lukasfeiler.com or write to lukas.feiler@lukasfeiler.com.
+
+
+6. Copyright Notice
+-------------------
+Copyright 2006 Lukas Feiler
+
+LICENSE:
+This source file is subject to version 2.1 of the LGPL
+that is bundled with this package in the file LICENSE.

@@ -1,0 +1,895 @@
+2006-04-23 17:19  lukasfeiler
+
+	* INSTALL (1.14): updated install instructions
+
+2006-04-23 16:21  tag RELEASE_0_6_0
+
+2006-04-23 16:21  lukasfeiler
+
+	* ChangeLog (1.19, RELEASE_0_6_0): updated ChangeLog by running
+	  'cvs2cl.pl -rtT'
+
+2006-04-23 16:20  lukasfeiler
+
+	* package.xml (1.24, RELEASE_0_6_0): added list of major features
+	  to description
+
+2006-04-23 01:54  lukasfeiler
+
+	* XML/Query2XML.php (1.36, RELEASE_0_6_0): removed @todo for
+	  complex attribute specification
+
+2006-04-23 01:53  lukasfeiler
+
+	* ChangeLog (1.17), ChangeLog (1.18): updated ChangeLog by running
+	  'cvs2cl.pl -rtT'
+
+2006-04-23 01:52  lukasfeiler
+
+	* README (1.10, RELEASE_0_6_0), RELEASES (1.11, RELEASE_0_6_0),
+	  package.xml (1.23): updated unit test count to 168 and documented
+	  new complex attribute specification to
+
+2006-04-23 01:44  lukasfeiler
+
+	* tests/Query2XMLTest.php (1.11, RELEASE_0_6_0): now 142 unit tests
+	  which makes a total of 168
+
+2006-04-23 01:43  lukasfeiler
+
+	* tutorials/XML_Query2XML/XML_Query2XML.pkg (1.17, RELEASE_0_6_0):
+	  complex attribute specification documented; plus: some small
+	  enhancements
+
+2006-04-23 01:42  lukasfeiler
+
+	* XML/Query2XML.php (1.35): NEW complex attribute specification;
+	  _getRecordCached() now returns null if no records were returned
+	  from the query; If only a the column part but not the tagName
+	  part of a simple element/attribute specification contains an
+	  asterisk the asterisk now simply ignored instead of throwing a
+	  ConfigException
+
+2006-04-21 19:35  lukasfeiler
+
+	* README (1.9), RELEASES (1.10), package.xml (1.22):
+	  Query2XMLTest.php now contains 134 unit test; XML_Query2XML now
+	  comes with a total of 160 unit tests
+
+2006-04-21 19:31  lukasfeiler
+
+	* tests/Query2XMLTest.php (1.10): new test for wrong argument to
+	  factory() method
+
+2006-04-21 19:28  lukasfeiler
+
+	* XML/Query2XML.php (1.34): now also including PEAR.php - otherwise
+	  a fatal error would occur under the following circumstances:
+	  DB.php or MDB2.php are not included before calling
+	  XML_Query2XML::factory() with a wrong argument - this is because
+	  PEAR::isError() does not exist before PEAR.php gets included
+
+2006-04-21 18:55  lukasfeiler
+
+	* ChangeLog (1.16): updated ChangeLog by running 'cvs2cl.pl -rtT'
+
+2006-04-21 18:54  lukasfeiler
+
+	* package.xml (1.21): updated <date>
+
+2006-04-21 18:52  lukasfeiler
+
+	* tutorials/XML_Query2XML/XML_Query2XML.pkg (1.16): added reference
+	  to I18N_UnicodeString in refsect3 9075mapping
+
+2006-04-21 18:47  lukasfeiler
+
+	* XML/Query2XML/ISO9075Mapper.php (1.6, RELEASE_0_6_0): added
+	  references to unit tests that test for
+	  XML_Query2XML_ISO9075Mapper_Exception thrown in _utf8ToUnicode();
+	  added @throws for map() method to document that the exception
+	  might bubble up from _utf8toUnicode()
+
+2006-04-21 18:40  lukasfeiler
+
+	* tests/ISO9075MapperTest.php (1.3, RELEASE_0_6_0): added $Id: ChangeLog-until-v0.6.0,v 1.1 2006/09/28 10:05:15 lukasfeiler Exp $ tag
+
+2006-04-21 00:03  lukasfeiler
+
+	* ChangeLog (1.15): updated ChangeLog by running 'cvs2cl.pl -rtT'
+
+2006-04-21 00:02  lukasfeiler
+
+	* XML/Query2XML.php (1.33): fixed typo on line 846
+
+2006-04-20 21:18  lukasfeiler
+
+	* ChangeLog (1.14): updated ChangeLog by running 'cvs2cl.pl -rtT'
+
+2006-04-20 21:16  lukasfeiler
+
+	* INSTALL (1.13, RELEASE_0_6_0): added optional dependency
+	  I18N_UnicodeString
+
+2006-04-20 21:15  lukasfeiler
+
+	* README (1.8): added references to Case 08 and
+	  ISO9075MapperTest.php
+
+2006-04-20 21:14  lukasfeiler
+
+	* RELEASES (1.9): updated release notes for upcoming v0.6.0
+
+2006-04-20 21:13  lukasfeiler
+
+	* package.xml (1.20): added line break after
+
+2006-04-20 21:11  lukasfeiler
+
+	* tutorials/XML_Query2XML/XML_Query2XML.pkg (1.15),
+	  XML/Query2XML/ISO9075Mapper.php (1.5): changed from DOS to UNIX
+	  line breaks
+
+2006-04-20 20:26  lukasfeiler
+
+	* tutorials/XML_Query2XML/XML_Query2XML.pkg (1.14): documented
+	  optional dependency PEAR I18N_UnicodeString
+
+2006-04-20 20:04  lukasfeiler
+
+	* tests/ISO9075MapperTest.php (1.2): now using I18N_UnicodeString
+	  instead of the Helper class
+
+2006-04-20 20:02  lukasfeiler
+
+	* tests/Query2XMLTest.php (1.9): new test cases for Case 08
+
+2006-04-20 20:01  lukasfeiler
+
+	* XML/Query2XML/ISO9075Mapper.php (1.4): all methods are now static
+	  and all but map() are private
+
+2006-04-20 19:58  lukasfeiler
+
+	* package.xml (1.19): added optional dependency for
+	  I18N_UnicodeString; documented major and minor changes since last
+	  release
+
+2006-04-20 15:02  lukasfeiler
+
+	* cases/case08/: case08.log (1.1), case08.php (1.1), case08.profile
+	  (1.1), case08.xml (1.1), case08_debug.php (1.1) (utags:
+	  RELEASE_0_6_0): new case 08
+
+2006-04-20 15:00  lukasfeiler
+
+	* tests/testCases.sh (1.7, RELEASE_0_6_0): set CASE_COUNT to 8
+
+2006-04-20 15:00  lukasfeiler
+
+	* XML/Query2XML.php (1.32): fixed bug: mapping and handling of the
+	  asterisk shortcut must not affect the array key of complex
+	  element specifications
+
+2006-04-20 14:58  lukasfeiler
+
+	* INSTALL (1.12): added entries for case08-files and for
+	  ISO9075MapperTest.php
+
+2006-04-20 14:58  lukasfeiler
+
+	* package.xml (1.18): added entries for case08-files
+
+2006-04-20 14:57  lukasfeiler
+
+	* tutorials/XML_Query2XML/XML_Query2XML.pkg (1.13): new Case 08:
+	  Case 06 revisited: Making use of Mappers & finished documentation
+	  for mapping option
+
+2006-04-20 11:44  lukasfeiler
+
+	* XML/Query2XML.php (1.31): support for the MapperClass::method
+	  syntax is now implemented within _getNestedXMLRecord
+
+2006-04-20 11:43  lukasfeiler
+
+	* XML/Query2XML/ISO9075Mapper.php (1.3): typo fixed
+
+2006-04-20 11:42  lukasfeiler
+
+	* tutorials/XML_Query2XML/XML_Query2XML.pkg (1.12): finished
+	  documentation of the mapper option
+
+2006-04-19 19:40  lukasfeiler
+
+	* package.xml (1.17): file tags for new
+	  XML/Query2XML/ISO9075Mapper.php and test/ISO9075MapperTest.php
+
+2006-04-19 19:39  lukasfeiler
+
+	* tests/ISO9075MapperTest.php (1.1): unit tests for
+	  XML_Query2XML_ISO9075Mapper
+
+2006-04-19 19:38  lukasfeiler
+
+	* XML/Query2XML/ISO9075Mapper.php (1.2): test code removed
+
+2006-04-19 19:37  lukasfeiler
+
+	* XML/Query2XML.php (1.30): new handling of mapping exceptions;
+	  plus: @throws documentation
+
+2006-04-19 19:35  lukasfeiler
+
+	* tests/Query2XMLTest.php (1.8): new mapping exception tests
+
+2006-04-18 16:13  lukasfeiler
+
+	* tests/Query2XMLTest.php (1.7): added Query2XMLTest::main() and
+	  PHPUnit2_MAIN_METHOD definition
+
+2006-04-18 15:17  lukasfeiler
+
+	* XML/Query2XML.php (1.29): new mapping feature
+
+2006-04-18 15:16  lukasfeiler
+
+	* XML/Query2XML/ISO9075Mapper.php (1.1): An ISO/IEC 9075-14:2005
+	  compatible mapper
+
+2006-04-17 02:21  lukasfeiler
+
+	* RELEASES (1.8), package.xml (1.16): added number of unit tests
+
+2006-04-17 02:20  lukasfeiler
+
+	* README (1.7): updated number of unit tests to 122
+
+2006-04-17 02:18  lukasfeiler
+
+	* tests/Query2XMLTest.php (1.6): 12 more unit tests to also cover
+	  MDB2
+
+2006-04-17 01:51  lukasfeiler
+
+	* RELEASES (1.7): added release notes for upcoming v0.6.0
+
+2006-04-17 01:49  lukasfeiler
+
+	* package.xml (1.15): updated release notes for upcoming v0.6.0
+
+2006-04-17 01:43  lukasfeiler
+
+	* tests/testCases.sh (1.6): changed CASE_COUNT variable to 7 so
+	  that case 07 is hanled too
+
+2006-04-17 01:42  lukasfeiler
+
+	* README (1.6): now includes a reference to case 07; plus: number
+	  of unit tests corrected to 110
+
+2006-04-17 01:41  lukasfeiler
+
+	* package.xml (1.14): added case07-files to the list of files that
+	  need to be installed
+
+2006-04-17 01:41  lukasfeiler
+
+	* INSTALL (1.11): added case07-files to the list of files that will
+	  get installed
+
+2006-04-17 01:40  lukasfeiler
+
+	* tutorials/XML_Query2XML/XML_Query2XML.pkg (1.11): added new Case
+	  07: Case 03 revisited: Simplifications with Asterisk Shortcuts
+
+2006-04-17 01:38  lukasfeiler
+
+	* cases/case07/: case07.log (1.1), case07.php (1.1), case07.profile
+	  (1.1), case07.xml (1.1), case07_debug.php (1.1) (utags:
+	  RELEASE_0_6_0): new Case 07: Case 03 revisited: Simplifications
+	  with Asterisk Shortcuts
+
+2006-04-17 00:17  lukasfeiler
+
+	* tests/Query2XMLTest.php (1.5): 11 new unit tests to test
+	  _expandShortcuts() and to test for the new throwing of aa
+	  XML_Query2XML_ConfigException if an attribute was not specified
+	  using a simple element specification
+
+2006-04-17 00:15  lukasfeiler
+
+	* tutorials/XML_Query2XML/XML_Query2XML.pkg (1.10): documentation
+	  of the new asterisk shortcut for elements and attributes
+
+2006-04-17 00:14  lukasfeiler
+
+	* XML/Query2XML.php (1.28): new private method _expandShortcuts()
+	  that handles the new asterisk shortcut; also: now throwing a
+	  XML_Query2XML_ConfigException if an attribute was not specified
+	  using a simple element specification
+
+2006-04-15 16:13  lukasfeiler
+
+	* package.xml (1.13): getting ready for v0.6.0
+
+2006-04-15 16:12  lukasfeiler
+
+	* XML/Query2XML.php (1.27): simplified _hasDOMChild() and
+	  _getDOMChild(); replaced all while(list() = each()) with
+	  foreach($array as $key => $value) - thanks to Hannes Magnusson
+
+2006-03-17 10:33  lukasfeiler
+
+	* ChangeLog (1.13): updated by running cvs2cl.pl -rtT
+
+2006-03-17 10:26  tag RELEASE_0_5_1
+
+2006-03-17 10:26  lukasfeiler
+
+	* ChangeLog (1.12, RELEASE_0_5_1): updated by running cvs2cl.pl
+	  -rtT
+
+2006-03-17 10:25  lukasfeiler
+
+	* RELEASES (1.6, RELEASE_0_5_1): added docs for v0.5.1
+
+2006-03-17 10:21  lukasfeiler
+
+	* ChangeLog (1.11): updated by running cvs2cl.pl -rtT
+
+2006-03-17 10:15  lukasfeiler
+
+	* package.xml (1.12, RELEASE_0_5_1): ready for v0.5.1
+
+2006-03-17 10:09  lukasfeiler
+
+	* XML/Query2XML.php (1.26, RELEASE_0_5_1): 4th argment to
+	  _getNestedXMLRecord is not optional
+
+2006-03-17 10:00  lukasfeiler
+
+	* tests/Query2XMLTest.php (1.4, RELEASE_0_5_1): removed @package
+	  tag
+
+2006-03-17 09:59  lukasfeiler
+
+	* package.xml (1.11): changed release date
+
+2006-03-17 09:59  lukasfeiler
+
+	* tests/Query2XMLTest.php (1.3): added file and class level docs
+
+2006-03-16 21:50  lukasfeiler
+
+	* XML/Query2XML.php (1.25): enhanced documentation for
+	  _getNestedXMLRecord
+
+2006-03-16 21:24  lukasfeiler
+
+	* XML/Query2XML.php (1.24): using if statements instead of tertiary
+	  operators; working with return value of _getNestedXMLRecord()
+	  inside getXML() instead of working with the $tree array
+
+2006-03-16 20:01  lukasfeiler
+
+	* XML/Query2XML.php (1.23): now using /* ... */ for all mult-line
+	  comments
+
+2006-03-16 19:09  lukasfeiler
+
+	* tests/: Query2XML_Tests.dm2 (1.1), Query2XML_Tests.jpg (1.1)
+	  (utags: RELEASE_0_5_1, RELEASE_0_6_0): moved from cases/sql/
+
+2006-03-16 19:07  lukasfeiler
+
+	* INSTALL (1.10, RELEASE_0_5_1), package.xml (1.10),
+	  tutorials/XML_Query2XML/XML_Query2XML.pkg (1.9, RELEASE_0_5_1):
+	  moved cases/sql/* to tests/
+
+2006-03-16 18:57  lukasfeiler
+
+	* INSTALL (1.9), README (1.5, RELEASE_0_5_1), RELEASES (1.5): added
+	  $Id: ChangeLog-until-v0.6.0,v 1.1 2006/09/28 10:05:15 lukasfeiler Exp $ keyword at the top of the file
+
+2006-03-16 18:53  lukasfeiler
+
+	* tests/: Query2XML_Tests.sql (1.2, RELEASE_0_6_0), testCases.sh
+	  (1.5) (utags: RELEASE_0_5_1): added $Id: ChangeLog-until-v0.6.0,v 1.1 2006/09/28 10:05:15 lukasfeiler Exp $ and description at the
+	  top of the file
+
+2006-03-16 18:31  lukasfeiler
+
+	* tutorials/XML_Query2XML/XML_Query2XML.pkg (1.8): documented the
+	  differnece of simple and complex query specifications with regard
+	  to DB/MDB2::query and DB/MDB2::prepare and DB/MDB2::execute
+
+2006-03-16 18:05  lukasfeiler
+
+	* XML/Query2XML.php (1.22): added {} code blocks; no more silencing
+	  for calls to DB::prepare and DB::execute
+
+2006-03-16 18:00  lukasfeiler
+
+	* XML/Query2XML.php (1.21): fixed type introduced during last
+	  modifications
+
+2006-03-16 17:56  lukasfeiler
+
+	* XML/Query2XML.php (1.20): now there is not a single line longer
+	  than 85 characters
+
+2006-03-16 17:55  lukasfeiler
+
+	* tests/Query2XMLTest.php (1.2): renamed
+	  test_applySqlOptionsToRecordCurrentMasterMergeSelectiveException(_MDB2)
+	  to test_applySqlOptionsToRecordMergeException1(_MDB2) and
+	  test_applySqlOptionsToRecordParentMasterMergeSelectiveException(_MDB2)
+	  to test_applySqlOptionsToRecordMergeException2(_MDB2)
+
+2006-03-16 17:32  lukasfeiler
+
+	* XML/Query2XML.php (1.19): removed fourth $attributes argument
+	  from _addNewDOMChild and _createDOMElement as it was nerver used
+
+2006-03-16 17:21  lukasfeiler
+
+	* XML/Query2XML.php (1.18): renamed
+	  _processComplexElementSpecification()'s argument $idColumn to
+	  $parentIdColumn
+
+2006-03-16 17:16  lukasfeiler
+
+	* XML/Query2XML.php (1.17): corrected references to unit test class
+	  Query2XMLTest
+
+2006-03-16 17:15  lukasfeiler
+
+	* XML/Query2XML.php (1.16): limiting maximum line length to 85
+	  characters
+
+2006-03-16 16:46  lukasfeiler
+
+	* XML/Query2XML.php (1.15): simplyfing if statement for creating a
+	  new rootTag
+
+2006-03-16 16:45  lukasfeiler
+
+	* XML/Query2XML.php (1.14): limiting maximum line length to 85
+	  characters
+
+2006-03-16 16:01  lukasfeiler
+
+	* XML/Query2XML.php (1.13): using ++$var instead of $var++ where
+	  appropriate
+
+2006-03-16 15:58  lukasfeiler
+
+	* XML/Query2XML.php (1.12): removed parentheses from require_once
+	  as it is a statement, not a function
+
+2006-03-13 22:23  lukasfeiler
+
+	* ChangeLog (1.10): updated ChangeLog by running 'cvs2cl.pl -rtT'
+
+2006-03-13 22:13  tag RELEASE_0_5_0
+
+2006-03-13 22:13  lukasfeiler
+
+	* ChangeLog (1.9, RELEASE_0_5_0): updated ChangeLog by running
+	  'cvs2cl.pl -rtT'
+
+2006-03-13 22:04  lukasfeiler
+
+	* XML/Query2XML.php (1.11, RELEASE_0_5_0): changed requirement
+	  documentation from PEAR DB to 'DB OR MDB2'
+
+2006-03-13 22:03  lukasfeiler
+
+	* cases/: case04/case04.php (1.3), case04/case04_debug.php (1.3),
+	  case05/case05.php (1.3), case05/case05_debug.php (1.3),
+	  case06/case06.php (1.3), case06/case06_debug.php (1.3) (utags:
+	  RELEASE_0_5_0, RELEASE_0_5_1, RELEASE_0_6_0): changed factory
+	  method invocation
+
+2006-03-13 20:55  lukasfeiler
+
+	* tests/: Query2XMLTest.php (1.1, RELEASE_0_5_0),
+	  XML_Query2XML_Test.php (1.2): renamed XML_Query2XML_Test.php to
+	  Query2XMLTest.php to comply with PHPUnit2 naming conventions
+
+2006-03-13 20:51  lukasfeiler
+
+	* package.xml (1.9, RELEASE_0_5_0): ready for release v0.5; changed
+	  developer name to 'lukasfeiler'
+
+2006-03-13 20:50  lukasfeiler
+
+	* RELEASES (1.4, RELEASE_0_5_0): release 0.5 added
+
+2006-03-13 19:26  lukasfeiler
+
+	* INSTALL (1.8, RELEASE_0_5_0): documented the fact that we now
+	  only have one php file for unit tests
+
+2006-03-13 19:24  lukasfeiler
+
+	* README (1.4, RELEASE_0_5_0): added reference to case 06 and
+	  documented the fact that we now only have one php file for unit
+	  tests
+
+2006-03-13 19:16  lukasfeiler
+
+	* package.xml (1.8): renamed unittest file
+
+2006-03-13 18:56  lukasfeiler
+
+	* cases/: case01/case01.php (1.3), case02/case02.php (1.3),
+	  case02/case02_debug.php (1.3), case03/case03.php (1.3),
+	  case03/case03_debug.php (1.3) (utags: RELEASE_0_5_0,
+	  RELEASE_0_5_1, RELEASE_0_6_0): changed factory method invocation
+
+2006-03-13 18:55  lukasfeiler
+
+	* tutorials/XML_Query2XML/XML_Query2XML.pkg (1.7, RELEASE_0_5_0):
+	  MDB2 support documented; factory method documentation updated;
+	  getFlatXML documentation added
+
+2006-03-13 18:52  lukasfeiler
+
+	* XML/Query2XML.php (1.10): PEAR MDB2 Support added. The argument
+	  for the factory method now must be an instance of PEAR DB or PEAR
+	  MDB; a DSN is not supported anymore.
+
+2006-03-13 15:40  lukasfeiler
+
+	* XML/Query2XML.php (1.9): all instances of '=&' replaced with '='
+	  for object assignments
+
+2006-03-13 14:19  lukasfeiler
+
+	* tutorials/XML_Query2XML/XML_Query2XML.pkg (1.6): added new
+	  section: Exception Handling
+
+2006-03-13 11:07  lukasfeiler
+
+	* tests/: Query2XMLTestWithDB.php (1.4), XML_Query2XML_Test.php
+	  (1.1): renamed Query2XMLTestWithDB.php to XML_Query2XML_Test.php
+	  to reflect the fact that this file now holds all PHPUnit2 unit
+	  tests
+
+2006-03-13 10:57  lukasfeiler
+
+	* tests/Query2XMLTestWithoutDB.php (1.4): merging all tests into
+	  one file
+
+2006-03-13 10:55  lukasfeiler
+
+	* XML/Query2XML.php (1.8): all new exception handling: the
+	  exceptions XML_Query2XML_DBException, XML_Query2XML_XMLException
+	  and XML_Query2XML_ConfigException all extend
+	  XML_Query2XML_Exception; no more SkipElementException
+
+2006-03-13 10:52  lukasfeiler
+
+	* tutorials/XML_Query2XML/XML_Query2XML.pkg (1.5): changed
+	  programlisting role from xml to tutorial and removed
+	  programlisting tag for sql
+
+2006-02-28 14:32  lukasfeiler
+
+	* ChangeLog (1.8): updated by running 'cvs2cl.pl -rtT'
+
+2006-02-28 14:18  tag RELEASE_0_4_0
+
+2006-02-28 14:18  lukasfeiler
+
+	* ChangeLog (1.7, RELEASE_0_4_0): updated by running 'cvs2cl.pl
+	  -rtT'
+
+2006-02-28 09:55  lukasfeiler
+
+	* package.xml (1.7, RELEASE_0_4_0): ready for 0.4.0
+
+2006-02-28 09:54  lukasfeiler
+
+	* RELEASES (1.3, RELEASE_0_4_0): added some notes
+
+2006-02-28 09:52  lukasfeiler
+
+	* RELEASES (1.2): documented v0.4.0
+
+2006-02-28 09:47  lukasfeiler
+
+	* tests/Query2XMLTestWithoutDB.php (1.3, RELEASE_0_4_0): tests for
+	  successful exception xml not necessary anymore
+
+2006-02-28 09:46  lukasfeiler
+
+	* tutorials/XML_Query2XML/XML_Query2XML.pkg (1.4),
+	  tests/Query2XMLTestWithDB.php (1.3) (utags: RELEASE_0_4_0):
+	  removed second argument from factory calls
+
+2006-02-28 09:45  lukasfeiler
+
+	* XML/Query2XML.php (1.7, RELEASE_0_4_0): all exceptions will be
+	  rethrown from now on - no more user defined error handling
+
+2006-02-25 20:18  tag RELEASE_0_3_0
+
+2006-02-25 20:18  lukasfeiler
+
+	* ChangeLog (1.6, RELEASE_0_3_0): ChangeLog updated by running
+	  'cvs2cl.pl -rtT'
+
+2006-02-25 20:01  lukasfeiler
+
+	* tutorials/XML_Query2XML/XML_Query2XML.pkg (1.3, RELEASE_0_3_0):
+	  one example still used XML_Query2XML_XMLElement
+
+2006-02-25 19:59  lukasfeiler
+
+	* ChangeLog (1.5): ChangeLog updated by running 'cvs2cl -rtT'
+
+2006-02-25 19:56  lukasfeiler
+
+	* tests/testCases.sh (1.4, RELEASE_0_5_0, RELEASE_0_4_0,
+	  RELEASE_0_3_0): deletion of xsd files not needed anymore
+
+2006-02-25 19:50  lukasfeiler
+
+	* tests/testCases.sh (1.3): typo in 'testCases.sh -h' ouput removed
+
+2006-02-25 19:49  lukasfeiler
+
+	* README (1.3, RELEASE_0_4_0, RELEASE_0_3_0): updated documentation
+	  about testCases.sh
+
+2006-02-25 19:47  lukasfeiler
+
+	* ChangeLog (1.4): ChangeLog updated by running 'cvs2cl -rtT'
+
+2006-02-25 19:43  lukasfeiler
+
+	* INSTALL (1.7, RELEASE_0_4_0, RELEASE_0_3_0): removed reverence to
+	  XML_Query2XML_XMLElement
+
+2006-02-25 19:39  lukasfeiler
+
+	* XML/Query2XML.php (1.6, RELEASE_0_3_0): corrected old error
+	  messages that included references to XML_Query2XML_XMLElement
+
+2006-02-25 19:37  lukasfeiler
+
+	* README (1.2): references to XML_Query2XML_XMLElement removed
+
+2006-02-25 19:32  lukasfeiler
+
+	* tutorials/XML_Query2XML/XML_Query2XML.pkg (1.2): various updates
+	  to reflect changes
+
+2006-02-25 19:31  lukasfeiler
+
+	* tests/testCases.sh (1.2): XSD tests removed
+
+2006-02-25 19:31  lukasfeiler
+
+	* tests/: Query2XMLTestWithDB.php (1.2), Query2XMLTestWithoutDB.php
+	  (1.2) (utags: RELEASE_0_3_0): updated unit tests to handle DOM
+	  XML
+
+2006-02-25 19:29  lukasfeiler
+
+	* cases/: case01/case01.php (1.2), case01/case01.xml (1.2,
+	  RELEASE_0_6_0, RELEASE_0_5_1, RELEASE_0_5_0), case02/case02.log
+	  (1.2, RELEASE_0_6_0, RELEASE_0_5_1, RELEASE_0_5_0),
+	  case02/case02.php (1.2), case02/case02.profile (1.2,
+	  RELEASE_0_6_0, RELEASE_0_5_1, RELEASE_0_5_0), case02/case02.xml
+	  (1.2, RELEASE_0_6_0, RELEASE_0_5_1, RELEASE_0_5_0),
+	  case02/case02_debug.php (1.2), case03/case03.log (1.2,
+	  RELEASE_0_6_0, RELEASE_0_5_1, RELEASE_0_5_0), case03/case03.php
+	  (1.2), case03/case03.profile (1.2, RELEASE_0_6_0, RELEASE_0_5_1,
+	  RELEASE_0_5_0), case03/case03.xml (1.2, RELEASE_0_6_0,
+	  RELEASE_0_5_1, RELEASE_0_5_0), case03/case03_debug.php (1.2),
+	  case04/case04.log (1.2, RELEASE_0_6_0, RELEASE_0_5_1,
+	  RELEASE_0_5_0), case04/case04.php (1.2), case04/case04.profile
+	  (1.2, RELEASE_0_6_0, RELEASE_0_5_1, RELEASE_0_5_0),
+	  case04/case04.xml (1.2, RELEASE_0_6_0, RELEASE_0_5_1,
+	  RELEASE_0_5_0), case04/case04_debug.php (1.2), case05/case05.log
+	  (1.2, RELEASE_0_6_0, RELEASE_0_5_1, RELEASE_0_5_0),
+	  case05/case05.php (1.2), case05/case05.profile (1.2,
+	  RELEASE_0_6_0, RELEASE_0_5_1, RELEASE_0_5_0), case05/case05.xml
+	  (1.2, RELEASE_0_6_0, RELEASE_0_5_1, RELEASE_0_5_0),
+	  case05/case05_debug.php (1.2), case06/case06.log (1.2,
+	  RELEASE_0_6_0, RELEASE_0_5_1, RELEASE_0_5_0), case06/case06.php
+	  (1.2), case06/case06.profile (1.2, RELEASE_0_6_0, RELEASE_0_5_1,
+	  RELEASE_0_5_0), case06/case06.xml (1.2, RELEASE_0_6_0,
+	  RELEASE_0_5_1, RELEASE_0_5_0), case06/case06_debug.php (1.2)
+	  (utags: RELEASE_0_3_0, RELEASE_0_4_0): updated cases to handle
+	  new return type of XML_Query2XML::getXML() - an DOMDocument
+	  instance
+
+2006-02-25 19:25  lukasfeiler
+
+	* XML/Query2XML.php (1.5): now using PHP's DOM XML classes instead
+	  of XML_Query2XML_XMLElement
+
+2006-02-25 19:25  lukasfeiler
+
+	* package.xml (1.6, RELEASE_0_3_0): now ready for v0.3.0
+
+2006-02-25 19:24  lukasfeiler
+
+	* INSTALL (1.6): updated requirements and optional packages
+
+2006-02-25 19:22  lukasfeiler
+
+	* INSTALL (1.5): updated list of installed files
+
+2006-02-25 19:19  lukasfeiler
+
+	* RELEASES (1.1, RELEASE_0_3_0): new info-file used to track
+	  Query2XML releases: RELEASES
+
+2006-02-25 19:17  lukasfeiler
+
+	* tests/XMLElementTest.php (1.2): now using PHP's DOM XML classes
+
+2006-02-25 19:13  lukasfeiler
+
+	* cases/: case01/case01.xsd (1.2), case01/case01_schema.php (1.2),
+	  case02/case02.xsd (1.2), case02/case02_schema.php (1.2),
+	  case03/case03.xsd (1.2), case03/case03_schema.php (1.2),
+	  case04/case04.xsd (1.2), case04/case04_schema.php (1.2),
+	  case05/case05.xsd (1.2), case05/case05_schema.php (1.2),
+	  case06/case06.xsd (1.2), case06/case06_schema.php (1.2): support
+	  for generating XML schema definitions was dropped
+
+2006-02-08 08:54  tag RELEASE_0_2_0
+
+2006-02-08 08:54  lukasfeiler
+
+	* ChangeLog (1.3, RELEASE_0_2_0): ChangeLog updated by running
+	  'cvs2cl.pl -rtT'
+
+2006-02-08 08:47  lukasfeiler
+
+	* package.xml (1.5, RELEASE_0_2_0): release date corrected
+
+2006-02-07 21:39  lukasfeiler
+
+	* INSTALL (1.4, RELEASE_0_2_0): installation instructions updated
+	  and requirements added
+
+2006-02-07 18:09  lukasfeiler
+
+	* XML/Query2XML.php (1.4, RELEASE_0_2_0): lukas@empoweredmail.com
+	  corrected to lukas.feiler@lukasfeiler.com
+
+2006-02-07 18:05  lukasfeiler
+
+	* XML/Query2XML.php (1.3): @copyright tag corrected
+
+2006-02-07 17:52  lukasfeiler
+
+	* package.xml (1.4): typo
+
+2006-02-07 17:50  lukasfeiler
+
+	* ChangeLog (1.2): ChangeLog updated by running 'cvs2cl.pl -rtT'
+
+2006-02-07 17:49  lukasfeiler
+
+	* package.xml (1.3): release tag fixed
+
+2006-02-07 17:35  lukasfeiler
+
+	* package.xml (1.2): now also installs the new ChangeLog into
+	  PHP_PEAR_DOC_DIR
+
+2006-02-07 17:35  lukasfeiler
+
+	* INSTALL (1.3): INSTALL itself was not mentioned
+
+2006-02-07 17:33  lukasfeiler
+
+	* XML/Query2XML.php (1.2): @version tag added on file level;
+	  @version tag on class level is now set to 'Release:
+	  @package_version@'
+
+2006-02-07 17:32  lukasfeiler
+
+	* ChangeLog (1.1): ChangeLog created by running 'cvs2cl.pl -rtT'
+
+2006-02-07 17:19  lukasfeiler
+
+	* INSTALL (1.2): now contains a list of files that will be
+	  installed
+
+2006-02-07 16:50  tag start
+
+2006-02-07 16:50  lukasfeiler
+
+	* INSTALL (1.1), LICENSE (1.1), README (1.1), package.xml (1.1),
+	  cases/case01/case01.php (1.1), cases/case01/case01.xml (1.1),
+	  cases/case01/case01.xsd (1.1), cases/case01/case01_schema.php
+	  (1.1), cases/case02/case02.log (1.1), cases/case02/case02.php
+	  (1.1), cases/case02/case02.profile (1.1), cases/case02/case02.xml
+	  (1.1), cases/case02/case02.xsd (1.1),
+	  cases/case02/case02_debug.php (1.1),
+	  cases/case02/case02_schema.php (1.1), cases/case03/case03.log
+	  (1.1), cases/case03/case03.php (1.1), cases/case03/case03.profile
+	  (1.1), cases/case03/case03.xml (1.1), cases/case03/case03.xsd
+	  (1.1), cases/case03/case03_debug.php (1.1),
+	  cases/case03/case03_schema.php (1.1), cases/case04/case04.log
+	  (1.1), cases/case04/case04.php (1.1), cases/case04/case04.profile
+	  (1.1), cases/case04/case04.xml (1.1), cases/case04/case04.xsd
+	  (1.1), cases/case04/case04_debug.php (1.1),
+	  cases/case04/case04_schema.php (1.1), cases/case05/case05.log
+	  (1.1), cases/case05/case05.php (1.1), cases/case05/case05.profile
+	  (1.1), cases/case05/case05.xml (1.1), cases/case05/case05.xsd
+	  (1.1), cases/case05/case05_debug.php (1.1),
+	  cases/case05/case05_schema.php (1.1), cases/case06/case06.log
+	  (1.1), cases/case06/case06.php (1.1), cases/case06/case06.profile
+	  (1.1), cases/case06/case06.xml (1.1), cases/case06/case06.xsd
+	  (1.1), cases/case06/case06_debug.php (1.1),
+	  cases/case06/case06_schema.php (1.1),
+	  tests/Query2XMLTestWithDB.php (1.1),
+	  tests/Query2XMLTestWithoutDB.php (1.1), tests/Query2XML_Tests.sql
+	  (1.1), tests/XMLElementTest.php (1.1), tests/testCases.sh (1.1),
+	  tutorials/XML_Query2XML/XML_Query2XML.pkg (1.1),
+	  XML/Query2XML.php (1.1): Initial revision
+
+2006-02-07 16:50  lukasfeiler
+
+	* INSTALL (1.1.1.1), LICENSE (1.1.1.1, RELEASE_0_6_0,
+	  RELEASE_0_5_1, RELEASE_0_5_0, RELEASE_0_4_0, RELEASE_0_3_0,
+	  RELEASE_0_2_0), README (1.1.1.1, RELEASE_0_2_0), package.xml
+	  (1.1.1.1), cases/case01/case01.php (1.1.1.1, RELEASE_0_2_0),
+	  cases/case01/case01.xml (1.1.1.1, RELEASE_0_2_0),
+	  cases/case01/case01.xsd (1.1.1.1, RELEASE_0_2_0),
+	  cases/case01/case01_schema.php (1.1.1.1, RELEASE_0_2_0),
+	  cases/case02/case02.log (1.1.1.1, RELEASE_0_2_0),
+	  cases/case02/case02.php (1.1.1.1, RELEASE_0_2_0),
+	  cases/case02/case02.profile (1.1.1.1, RELEASE_0_2_0),
+	  cases/case02/case02.xml (1.1.1.1, RELEASE_0_2_0),
+	  cases/case02/case02.xsd (1.1.1.1, RELEASE_0_2_0),
+	  cases/case02/case02_debug.php (1.1.1.1, RELEASE_0_2_0),
+	  cases/case02/case02_schema.php (1.1.1.1, RELEASE_0_2_0),
+	  cases/case03/case03.log (1.1.1.1, RELEASE_0_2_0),
+	  cases/case03/case03.php (1.1.1.1, RELEASE_0_2_0),
+	  cases/case03/case03.profile (1.1.1.1, RELEASE_0_2_0),
+	  cases/case03/case03.xml (1.1.1.1, RELEASE_0_2_0),
+	  cases/case03/case03.xsd (1.1.1.1, RELEASE_0_2_0),
+	  cases/case03/case03_debug.php (1.1.1.1, RELEASE_0_2_0),
+	  cases/case03/case03_schema.php (1.1.1.1, RELEASE_0_2_0),
+	  cases/case04/case04.log (1.1.1.1, RELEASE_0_2_0),
+	  cases/case04/case04.php (1.1.1.1, RELEASE_0_2_0),
+	  cases/case04/case04.profile (1.1.1.1, RELEASE_0_2_0),
+	  cases/case04/case04.xml (1.1.1.1, RELEASE_0_2_0),
+	  cases/case04/case04.xsd (1.1.1.1, RELEASE_0_2_0),
+	  cases/case04/case04_debug.php (1.1.1.1, RELEASE_0_2_0),
+	  cases/case04/case04_schema.php (1.1.1.1, RELEASE_0_2_0),
+	  cases/case05/case05.log (1.1.1.1, RELEASE_0_2_0),
+	  cases/case05/case05.php (1.1.1.1, RELEASE_0_2_0),
+	  cases/case05/case05.profile (1.1.1.1, RELEASE_0_2_0),
+	  cases/case05/case05.xml (1.1.1.1, RELEASE_0_2_0),
+	  cases/case05/case05.xsd (1.1.1.1, RELEASE_0_2_0),
+	  cases/case05/case05_debug.php (1.1.1.1, RELEASE_0_2_0),
+	  cases/case05/case05_schema.php (1.1.1.1, RELEASE_0_2_0),
+	  cases/case06/case06.log (1.1.1.1, RELEASE_0_2_0),
+	  cases/case06/case06.php (1.1.1.1, RELEASE_0_2_0),
+	  cases/case06/case06.profile (1.1.1.1, RELEASE_0_2_0),
+	  cases/case06/case06.xml (1.1.1.1, RELEASE_0_2_0),
+	  cases/case06/case06.xsd (1.1.1.1, RELEASE_0_2_0),
+	  cases/case06/case06_debug.php (1.1.1.1, RELEASE_0_2_0),
+	  cases/case06/case06_schema.php (1.1.1.1, RELEASE_0_2_0),
+	  tests/Query2XMLTestWithDB.php (1.1.1.1, RELEASE_0_2_0),
+	  tests/Query2XMLTestWithoutDB.php (1.1.1.1, RELEASE_0_2_0),
+	  tests/Query2XML_Tests.sql (1.1.1.1, RELEASE_0_5_0, RELEASE_0_4_0,
+	  RELEASE_0_3_0, RELEASE_0_2_0), tests/XMLElementTest.php (1.1.1.1,
+	  RELEASE_0_2_0), tests/testCases.sh (1.1.1.1, RELEASE_0_2_0),
+	  tutorials/XML_Query2XML/XML_Query2XML.pkg (1.1.1.1,
+	  RELEASE_0_2_0), XML/Query2XML.php (1.1.1.1) (utags: start):
+	  Query2XML
+

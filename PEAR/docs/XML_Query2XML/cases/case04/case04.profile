@@ -1,0 +1,11 @@
+FROM_DB FROM_CACHE CACHED AVG_DURATION DURATION_SUM SQL
+1       0          false  0.0268840789 0.0268840789 SELECT
+        *
+     FROM
+        artist
+     ORDER BY
+        artistid
+3       0          false  0.0213466485 0.0640399456 SELECT * FROM album WHERE artist_id = ?
+
+TOTAL_DURATION: 0.16551780700684
+DB_DURATION:    0.14494585990906

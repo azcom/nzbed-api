@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!DOCTYPE page [
+    <!ENTITY foo SYSTEM "foo.xml">
+    <!ENTITY bar SYSTEM "bar.xml">
+]>
+<document title="Current News">
+    <meta foo="bar" project="none">
+        <keywords />
+        <description />
+        <author>Stephan Schmidt</author>
+        <getMetaNav />
+    </meta>
+    <page label="PHP Application Tools" sublabel="Current News">
+        <?PHP
+        for($i = 0; $i < count($_GET); $i++) {
+                echo    $_GET[$i]."<br>";
+            }
+        ?>
+        &foo;
+        &bar;
+        <intro>
+            <test>
+                <![CDATA[This is a CData section with an &. ]]>
+            </test>
+            <!--
+                This Comment
+                has more
+                than one line.
+            -->
+            <introtitle>Welcome to PHP Application Tools &amp; PEAR!</introtitle>
+            <para>
+                If you&apos;re new to pat, and would like
+                <!-- This is a comment in a single line that contains an &amp; -->
+                to know what we do here, take a look at
+                <link url="/about/project.xml">&quot;About Pat&quot;</link>
+                or check out the
+                <link url="/about/projectsOverview.xml">&quot;projects overview&quot;</link>
+                . Otherwise, you probably know your way around the site already
+                <smiley type="smile" />
+            </para>
+        </intro>
+    </page>
+</document>

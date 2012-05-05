@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<music_company date_generated="2005-08-23T14:52:50">
+  <store STOREID="1">
+    <STORE_SALES>10</STORE_SALES>
+    <STORE_EMPLOYEES>6</STORE_EMPLOYEES>
+    <manager MANAGER_EMPLOYEEID="1">
+      <MANAGER_EMPLOYEENAME>Michael Jones</MANAGER_EMPLOYEENAME>
+    </manager>
+    <address>
+      <COUNTRY>US</COUNTRY>
+      <STATE>NY</STATE>
+      <CITY>New York</CITY>
+      <STREET>Broadway &amp; 72nd Str</STREET>
+      <PHONE>123 456 7890</PHONE>
+    </address>
+    <department departmentid="1">
+      <departmentSales>10</departmentSales>
+      <departmentEmployees>3</departmentEmployees>
+      <departmentname>Sales</departmentname>
+      <department_head departmentHeadEmployeeid="1">
+        <departmentHeadEmployeename>Michael Jones</departmentHeadEmployeename>
+      </department_head>
+      <employees>
+        <employee Employeeid="1">
+          <Employeename>Michael Jones</Employeename>
+          <sales>
+            <sale SALEID="1">
+              <TIMESTAMP>2005-05-25 16:32:00</TIMESTAMP>
+              <customer customerid="1">
+                <first_name>Jane</first_name>
+                <last_name>Doe</last_name>
+                <email>jane.doe@example.com</email>
+              </customer>
+              <album albumid="1">
+                <title>New World Order</title>
+                <published_year>1990</published_year>
+                <comment>the best ...</comment>
+                <artist artistid="1">
+                  <name>Curtis Mayfield</name>
+                  <birthyear>1920</birthyear>
+                  <birthplace>Chicago</birthplace>
+                  <genre>Soul</genre>
+                </artist>
+              </album>
+            </sale>
+            <sale SALEID="7">
+              <TIMESTAMP>2005-07-10 15:03:00</TIMESTAMP>
+              <customer customerid="7">
+                <first_name>Nick</first_name>
+                <last_name>Fallow</last_name>
+                <email>nick.fallow@example.com</email>
+              </customer>
+              <album albumid="1">
+                <title>New World Order</title>
+                <published_year>1990</published_year>
+                <comment>the best ...</comment>
+                <artist artistid="1">
+                  <name>Curtis Mayfield</name>
+                  <birthyear>1920</birthyear>
+                  <birthplace>Chicago</birthplace>
+                  <genre>Soul</genre>
+                </artist>
+              </album>
+            </sale>
+            <sale SALEID="16">
+              <TIMESTAMP>2005-06-05 12:56:12</TIMESTAMP>
+              <customer customerid="2">
+                <first_name>John</first_name>
+                <last_name>Doe</last_name>
+                <email>john.doe@example.com</email>
+              </customer>
+              <album albumid="3">
+                <title>Shaft</title>
+                <published_year>1972</published_year>
+                <comment>he's the man</comment>
+                <artist artistid="2">
+                  <name>Isaac Hayes</name>
+                  <birthyear>1942</birthyear>
+                  <birthplace>Tennessee</birthplace>
+                  <genre>Soul</genre>
+                </artist>
+              </album>
+            </sale>
+            <sale SALEID="19">
+              <TIMESTAMP>2005-07-10 16:03:01</TIMESTAMP>
+              <customer customerid="8">
+                <first_name>Ed</first_name>
+                <last_name>Burton</last_name>
+                <email>ed.burton@example.com</email>
+              </customer>
+              <album albumid="3">
+                <title>Shaft</title>
+                <published_year>1972</published_year>
+                <comment>he's the man</comment>
+                <artist artistid="2">
+                  <name>Isaac Hayes</name>
+                  <birthyear>1942</birthyear>
+                  <birthplace>Tennessee</birthplace>
+                  <genre>Soul</genre>
+                </artist>
+              </album>
+            </sale>
+          </sales>
+        </employee>
+        <employee Employeeid="2">
+          <Employeename>Susi Weintraub</Employeename>
+          <sales>
+            <sale SALEID="3">
+              <TIMESTAMP>2005-07-10 11:03:00</TIMESTAMP>
+              <customer customerid="3">
+                <first_name>Susan</first_name>
+                <last_name>Green</last_name>
+                <email>susan.green@example.com</email>
+              </customer>
+              <album albumid="1">
+                <title>New World Order</title>
+                <published_year>1990</published_year>
+                <comment>the best ...</comment>
+                <artist artistid="1">
+                  <name>Curtis Mayfield</name>
+                  <birthyear>1920</birthyear>
+                  <birthplace>Chicago</birthplace>
+                  <genre>Soul</genre>
+                </artist>
+              </album>
+            </sale>
+            <sale SALEID="9">
+              <TIMESTAMP>2005-07-10 18:03:00</TIMESTAMP>
+              <customer customerid="9">
+                <first_name>Jack</first_name>
+                <last_name>Woo</last_name>
+                <email>jack.woo@example.com</email>
+              </customer>
+              <album albumid="1">
+                <title>New World Order</title>
+                <published_year>1990</published_year>
+                <comment>the best ...</comment>
+                <artist artistid="1">
+                  <name>Curtis Mayfield</name>
+                  <birthyear>1920</birthyear>
+                  <birthplace>Chicago</birthplace>
+                  <genre>Soul</genre>
+                </artist>
+              </album>
+            </sale>
+            <sale SALEID="17">
+              <TIMESTAMP>2005-07-10 10:03:32</TIMESTAMP>
+              <customer customerid="4">
+                <first_name>Victoria</first_name>
+                <last_name>Alt</last_name>
+                <email>victory.alt@example.com</email>
+              </customer>
+              <album albumid="3">
+                <title>Shaft</title>
+                <published_year>1972</published_year>
+                <comment>he's the man</comment>
+                <artist artistid="2">
+                  <name>Isaac Hayes</name>
+                  <birthyear>1942</birthyear>
+                  <birthplace>Tennessee</birthplace>
+                  <genre>Soul</genre>
+                </artist>
+              </album>
+            </sale>
+            <sale SALEID="20">
+              <TIMESTAMP>2005-07-10 19:03:50</TIMESTAMP>
+              <customer customerid="10">
+                <first_name>Maria</first_name>
+                <last_name>Gonzales</last_name>
+                <email>maria.gonzales@example.com</email>
+              </customer>
+              <album albumid="3">
+                <title>Shaft</title>
+                <published_year>1972</published_year>
+                <comment>he's the man</comment>
+                <artist artistid="2">
+                  <name>Isaac Hayes</name>
+                  <birthyear>1942</birthyear>
+                  <birthplace>Tennessee</birthplace>
+                  <genre>Soul</genre>
+                </artist>
+              </album>
+            </sale>
+          </sales>
+        </employee>
+        <employee Employeeid="3">
+          <Employeename>Steve Hack</Employeename>
+          <sales>
+            <sale SALEID="5">
+              <TIMESTAMP>2005-07-10 13:03:00</TIMESTAMP>
+              <customer customerid="5">
+                <first_name>Will</first_name>
+                <last_name>Rippy</last_name>
+                <email>will.wippy@example.com</email>
+              </customer>
+              <album albumid="1">
+                <title>New World Order</title>
+                <published_year>1990</published_year>
+                <comment>the best ...</comment>
+                <artist artistid="1">
+                  <name>Curtis Mayfield</name>
+                  <birthyear>1920</birthyear>
+                  <birthplace>Chicago</birthplace>
+                  <genre>Soul</genre>
+                </artist>
+              </album>
+            </sale>
+            <sale SALEID="18">
+              <TIMESTAMP>2005-07-10 14:03:52</TIMESTAMP>
+              <customer customerid="6">
+                <first_name>Tim</first_name>
+                <last_name>Raw</last_name>
+                <email>tim.raw@example.com</email>
+              </customer>
+              <album albumid="3">
+                <title>Shaft</title>
+                <published_year>1972</published_year>
+                <comment>he's the man</comment>
+                <artist artistid="2">
+                  <name>Isaac Hayes</name>
+                  <birthyear>1942</birthyear>
+                  <birthplace>Tennessee</birthplace>
+                  <genre>Soul</genre>
+                </artist>
+              </album>
+            </sale>
+          </sales>
+        </employee>
+      </employees>
+    </department>
+    <department departmentid="2">
+      <departmentSales>0</departmentSales>
+      <departmentEmployees>3</departmentEmployees>
+      <departmentname>Marketing</departmentname>
+      <department_head departmentHeadEmployeeid="4">
+        <departmentHeadEmployeename>Joan Kerr</departmentHeadEmployeename>
+      </department_head>
+      <employees>
+        <employee Employeeid="4">
+          <Employeename>Joan Kerr</Employeename>
+          <sales/>
+        </employee>
+        <employee Employeeid="5">
+          <Employeename>Marcus Roth</Employeename>
+          <sales/>
+        </employee>
+        <employee Employeeid="6">
+          <Employeename>Jack Mack</Employeename>
+          <sales/>
+        </employee>
+      </employees>
+    </department>
+  </store>
+  <store STOREID="2">
+    <STORE_SALES>10</STORE_SALES>
+    <STORE_EMPLOYEES>6</STORE_EMPLOYEES>
+    <manager MANAGER_EMPLOYEEID="2">
+      <MANAGER_EMPLOYEENAME>Susi Weintraub</MANAGER_EMPLOYEENAME>
+    </manager>
+    <address>
+      <COUNTRY>US</COUNTRY>
+      <STATE>NY</STATE>
+      <CITY>Larchmont</CITY>
+      <STREET>Palmer Ave 71</STREET>
+      <PHONE>456 7890</PHONE>
+    </address>
+    <department departmentid="3">
+      <departmentSales>10</departmentSales>
+      <departmentEmployees>3</departmentEmployees>
+      <departmentname>Sales</departmentname>
+      <department_head departmentHeadEmployeeid="7">
+        <departmentHeadEmployeename>Rita Doktor</departmentHeadEmployeename>
+      </department_head>
+      <employees>
+        <employee Employeeid="7">
+          <Employeename>Rita Doktor</Employeename>
+          <sales>
+            <sale SALEID="2">
+              <TIMESTAMP>2005-06-05 12:56:00</TIMESTAMP>
+              <customer customerid="2">
+                <first_name>John</first_name>
+                <last_name>Doe</last_name>
+                <email>john.doe@example.com</email>
+              </customer>
+              <album albumid="1">
+                <title>New World Order</title>
+                <published_year>1990</published_year>
+                <comment>the best ...</comment>
+                <artist artistid="1">
+                  <name>Curtis Mayfield</name>
+                  <birthyear>1920</birthyear>
+                  <birthplace>Chicago</birthplace>
+                  <genre>Soul</genre>
+                </artist>
+              </album>
+            </sale>
+            <sale SALEID="8">
+              <TIMESTAMP>2005-07-10 16:03:00</TIMESTAMP>
+              <customer customerid="8">
+                <first_name>Ed</first_name>
+                <last_name>Burton</last_name>
+                <email>ed.burton@example.com</email>
+              </customer>
+              <album albumid="1">
+                <title>New World Order</title>
+                <published_year>1990</published_year>
+                <comment>the best ...</comment>
+                <artist artistid="1">
+                  <name>Curtis Mayfield</name>
+                  <birthyear>1920</birthyear>
+                  <birthplace>Chicago</birthplace>
+                  <genre>Soul</genre>
+                </artist>
+              </album>
+            </sale>
+            <sale SALEID="11">
+              <TIMESTAMP>2005-05-25 16:23:00</TIMESTAMP>
+              <customer customerid="1">
+                <first_name>Jane</first_name>
+                <last_name>Doe</last_name>
+                <email>jane.doe@example.com</email>
+              </customer>
+              <album albumid="2">
+                <title>Curtis</title>
+                <published_year>1970</published_year>
+                <comment>that man ...</comment>
+                <artist artistid="1">
+                  <name>Curtis Mayfield</name>
+                  <birthyear>1920</birthyear>
+                  <birthplace>Chicago</birthplace>
+                  <genre>Soul</genre>
+                </artist>
+              </album>
+            </sale>
+            <sale SALEID="14">
+              <TIMESTAMP>2005-07-10 15:09:00</TIMESTAMP>
+              <customer customerid="7">
+                <first_name>Nick</first_name>
+                <last_name>Fallow</last_name>
+                <email>nick.fallow@example.com</email>
+              </customer>
+              <album albumid="2">
+                <title>Curtis</title>
+                <published_year>1970</published_year>
+                <comment>that man ...</comment>
+                <artist artistid="1">
+                  <name>Curtis Mayfield</name>
+                  <birthyear>1920</birthyear>
+                  <birthplace>Chicago</birthplace>
+                  <genre>Soul</genre>
+                </artist>
+              </album>
+            </sale>
+          </sales>
+        </employee>
+        <employee Employeeid="8">
+          <Employeename>David Til</Employeename>
+          <sales>
+            <sale SALEID="4">
+              <TIMESTAMP>2005-07-10 10:03:00</TIMESTAMP>
+              <customer customerid="4">
+                <first_name>Victoria</first_name>
+                <last_name>Alt</last_name>
+                <email>victory.alt@example.com</email>
+              </customer>
+              <album albumid="1">
+                <title>New World Order</title>
+                <published_year>1990</published_year>
+                <comment>the best ...</comment>
+                <artist artistid="1">
+                  <name>Curtis Mayfield</name>
+                  <birthyear>1920</birthyear>
+                  <birthplace>Chicago</birthplace>
+                  <genre>Soul</genre>
+                </artist>
+              </album>
+            </sale>
+            <sale SALEID="10">
+              <TIMESTAMP>2005-07-10 19:03:00</TIMESTAMP>
+              <customer customerid="10">
+                <first_name>Maria</first_name>
+                <last_name>Gonzales</last_name>
+                <email>maria.gonzales@example.com</email>
+              </customer>
+              <album albumid="1">
+                <title>New World Order</title>
+                <published_year>1990</published_year>
+                <comment>the best ...</comment>
+                <artist artistid="1">
+                  <name>Curtis Mayfield</name>
+                  <birthyear>1920</birthyear>
+                  <birthplace>Chicago</birthplace>
+                  <genre>Soul</genre>
+                </artist>
+              </album>
+            </sale>
+            <sale SALEID="12">
+              <TIMESTAMP>2005-07-10 11:56:00</TIMESTAMP>
+              <customer customerid="3">
+                <first_name>Susan</first_name>
+                <last_name>Green</last_name>
+                <email>susan.green@example.com</email>
+              </customer>
+              <album albumid="2">
+                <title>Curtis</title>
+                <published_year>1970</published_year>
+                <comment>that man ...</comment>
+                <artist artistid="1">
+                  <name>Curtis Mayfield</name>
+                  <birthyear>1920</birthyear>
+                  <birthplace>Chicago</birthplace>
+                  <genre>Soul</genre>
+                </artist>
+              </album>
+            </sale>
+            <sale SALEID="15">
+              <TIMESTAMP>2005-07-10 18:49:00</TIMESTAMP>
+              <customer customerid="9">
+                <first_name>Jack</first_name>
+                <last_name>Woo</last_name>
+                <email>jack.woo@example.com</email>
+              </customer>
+              <album albumid="2">
+                <title>Curtis</title>
+                <published_year>1970</published_year>
+                <comment>that man ...</comment>
+                <artist artistid="1">
+                  <name>Curtis Mayfield</name>
+                  <birthyear>1920</birthyear>
+                  <birthplace>Chicago</birthplace>
+                  <genre>Soul</genre>
+                </artist>
+              </album>
+            </sale>
+          </sales>
+        </employee>
+        <employee Employeeid="9">
+          <Employeename>Pia Eist</Employeename>
+          <sales>
+            <sale SALEID="6">
+              <TIMESTAMP>2005-07-10 14:03:00</TIMESTAMP>
+              <customer customerid="6">
+                <first_name>Tim</first_name>
+                <last_name>Raw</last_name>
+                <email>tim.raw@example.com</email>
+              </customer>
+              <album albumid="1">
+                <title>New World Order</title>
+                <published_year>1990</published_year>
+                <comment>the best ...</comment>
+                <artist artistid="1">
+                  <name>Curtis Mayfield</name>
+                  <birthyear>1920</birthyear>
+                  <birthplace>Chicago</birthplace>
+                  <genre>Soul</genre>
+                </artist>
+              </album>
+            </sale>
+            <sale SALEID="13">
+              <TIMESTAMP>2005-07-10 13:12:00</TIMESTAMP>
+              <customer customerid="5">
+                <first_name>Will</first_name>
+                <last_name>Rippy</last_name>
+                <email>will.wippy@example.com</email>
+              </customer>
+              <album albumid="2">
+                <title>Curtis</title>
+                <published_year>1970</published_year>
+                <comment>that man ...</comment>
+                <artist artistid="1">
+                  <name>Curtis Mayfield</name>
+                  <birthyear>1920</birthyear>
+                  <birthplace>Chicago</birthplace>
+                  <genre>Soul</genre>
+                </artist>
+              </album>
+            </sale>
+          </sales>
+        </employee>
+      </employees>
+    </department>
+    <department departmentid="4">
+      <departmentSales>0</departmentSales>
+      <departmentEmployees>3</departmentEmployees>
+      <departmentname>Marketing</departmentname>
+      <department_head departmentHeadEmployeeid="10">
+        <departmentHeadEmployeename>Hanna Poll</departmentHeadEmployeename>
+      </department_head>
+      <employees>
+        <employee Employeeid="10">
+          <Employeename>Hanna Poll</Employeename>
+          <sales/>
+        </employee>
+        <employee Employeeid="11">
+          <Employeename>Jim Wells</Employeename>
+          <sales/>
+        </employee>
+        <employee Employeeid="12">
+          <Employeename>Sandra Wilson</Employeename>
+          <sales/>
+        </employee>
+      </employees>
+    </department>
+  </store>
+</music_company>

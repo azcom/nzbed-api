@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="AllTests.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="Serializer_Arrays_TestCase.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="Serializer_Objects_TestCase.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="Serializer_Option_AttributesContent_TestCase.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="Serializer_Option_CDataSections_TestCase.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="Serializer_Option_ClassName_TestCase.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="Serializer_Option_Comment_TestCase.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="Serializer_Option_DefaultTag_TestCase.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="Serializer_Option_DocType_TestCase.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="Serializer_Option_EncodeFunc_TestCase.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="Serializer_Option_IgnoreNull_TestCase.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="Serializer_Option_Indent_TestCase.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="Serializer_Option_Linebreaks_TestCase.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="Serializer_Option_Mode_TestCase.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="Serializer_Option_Namespace_TestCase.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="Serializer_Option_ReturnResult_TestCase.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="Serializer_Option_RootAttributes_TestCase.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="Serializer_Option_RootName_TestCase.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="Serializer_Option_TagMap_TestCase.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="Serializer_Option_TypeHints_TestCase.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="Serializer_Option_XmlDeclaration_TestCase.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="Serializer_Scalars_TestCase.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="Unserializer_Arrays_TestCase.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="Unserializer_Objects_TestCase.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="Unserializer_Option_Encodings_TestCase.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="Unserializer_Option_GuessTypes_TestCase.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="Unserializer_Option_Whitespace_TestCase.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="Unserializer_Scalars_TestCase.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="bug-12139.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="bug-13896.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="bug-15602.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="bug-9799.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="req-13564.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="show_ScalarAsAttributes_usage.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+</dwsync>

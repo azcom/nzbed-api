@@ -1,0 +1,348 @@
+Public Releases of XML_Query2XML
+================================
+Version: $Id: RELEASES,v 1.22 2009/03/01 13:18:01 lukasfeiler Exp $
+
+
+v1.7.1
+------
+Release date: 2009-03-08
+Release notes: This release implements the following additions:
+- Caching is now implemented as a saparate driver that is automatically
+  wrapped around any other driver if caching is activated.
+  This reduces the codebase of Query2XML.php.
+- Refactoring of internal classes.
+Note: No changes were introduced since 1.7.1RC1.
+
+v1.7.1RC1
+---------
+Release date: 2009-03-01
+Release notes: This release implements the following additions:
+- Caching is now implemented as a saparate driver that is automatically
+  wrapped around any other driver if caching is activated.
+  This reduces the codebase of Query2XML.php.
+- Refactoring of internal classes.
+
+v1.7.0
+------
+Release date: 2008-05-02
+Release notes: This feature release brings the following additions:
+- new driver for PEAR Net_LDAP2: XML_Query2XML_Driver_LDAP2
+- options 'limit' and 'offset' now supported by the MDB2 and DB drivers;
+  thanks to Johnny Cheng from openflyers.org for this feature request
+- improved logging: now also logs the variables with which a prepared
+  statement is executed
+- consolidation of unit tests for different database drivers; use
+  the environment variable PHP_PEAR_XML_QUERY2XML_TEST_DBLAYER to
+  set the database driver to be used (MDB2,DB,PDO,ADOdbDefault,
+  ADOdbPEAR or ADOdbException). Also use the environment variable
+  PHP_PEAR_XML_QUERY2XML_TEST_LDAPLAYER to set the LDAP driver
+  to be used (LDAP or LDAP2). Then simply run
+  'pear run-tests -p XML_Query2XML'
+Note: no changes were introduced since 1.7.0RC1.
+
+v1.7.0RC1
+---------
+Release date: 2008-04-18
+Release notes: This feature release brings the following additions:
+- new driver for PEAR Net_LDAP2: XML_Query2XML_Driver_LDAP2
+- options 'limit' and 'offset' now supported by the MDB2 and DB drivers;
+  thanks to Johnny Cheng from openflyers.org for this feature request
+- improved logging: now also logs the variables with which a prepared
+  statement is executed
+- consolidation of unit tests for different database drivers; use
+  the environment variable PHP_PEAR_XML_QUERY2XML_TEST_DBLAYER to
+  set the database driver to be used (MDB2,DB,PDO,ADOdbDefault,
+  ADOdbPEAR or ADOdbException). Also use the environment variable
+  PHP_PEAR_XML_QUERY2XML_TEST_LDAPLAYER to set the LDAP driver
+  to be used (LDAP or LDAP2). Then simply run
+  'pear run-tests -p XML_Query2XML'
+
+v1.6.0
+------
+Release date: 2008-01-06
+Release notes: This stable release implements the following new features:
+- LDAP support: the new LDAP driver uses PEAR Net_LDAP
+  see http://query2xml.sf.net/docs/html/XML_Query2XML/tutorial_XML_Query2XML.pkg.html#ldap
+- new open driver architecture allows you to implement your own drivers
+  see http://query2xml.sf.net/docs/html/XML_Query2XML/tutorial_XML_Query2XML.pkg.html#yourdriver
+- $options['sql']['driver'] now allows you to use different drivers for each query
+- fixed documentation bug #12568
+- PEAR Coding Standard fixes
+- correction of copyright notice
+- XML_Query2XML now comes with 1159 phpt unit tests
+Note: No changes were introduced since 1.6.0RC1.
+
+v1.6.0RC1
+---------
+Release date: 2008-01-02
+Release notes: This release candidate contains the following new features:
+- LDAP support: the new LDAP driver uses PEAR Net_LDAP
+  see http://query2xml.sf.net/docs/html/XML_Query2XML/tutorial_XML_Query2XML.pkg.html#ldap
+- new open driver architecture allows you to implement your own drivers
+  see http://query2xml.sf.net/docs/html/XML_Query2XML/tutorial_XML_Query2XML.pkg.html#yourdriver
+- $options['sql']['driver'] now allows you to use different drivers for each query
+- fixed documentation bug #12568
+- PEAR Coding Standard fixes
+- correction of copyright notice
+- XML_Query2XML now comes with 1159 phpt unit tests
+
+v1.5.0
+---------
+Release date: 2007-10-07
+Release notes: This seventh stable release comes after extensive re-factoring:
+- XML_Query2XML now does a lot of internal pre-processing
+- this improves performance by at least 30%
+- all exceptions now contain information that relates to the
+  configuration option that caused the exception to be thrown
+- caching is now deactivated by default as is not needed in
+  most cases; see $options['sql_options']['cached']
+- XML_Query2XML now comes with 1144 phpt unit tests
+Note: No changes were introduced since 1.5.0RC1.
+
+v1.5.0RC1
+---------
+Release date: 2007-09-30
+Release notes: This release candidate comes after extensive re-factoring:
+- XML_Query2XML now does a lot of internal pre-processing
+- this improves performance by at least 30%
+- all exceptions now contain information that relates to the
+  configuration option that caused the exception to be thrown
+- caching is now deactivated by default as is not needed in
+  most cases; see $options['sql_options']['cached']
+- XML_Query2XML now comes with 1144 phpt unit tests
+Note: if 1.5.0RC1 does not cause any problems for early adopters
+(which I consider very unlikely) 1.5.0 will be released next weekend.
+
+v1.4.0
+------
+Release date: 2007-09-03
+Release notes: This sixth stable release contains a couple of new features:
+- PDO support - this also adds support for SQLite 3 (thanks to
+  John P. McCaskey for pointing out the lack of SQLite 3 support)
+- all unit tests now run with SQLite 2 by default; unit tests
+  for PDO and PEAR MDB2 will therefore work out of the box
+- XML_Query2XML now comes with 1084 phpt unit tests
+
+v1.3.0
+------
+Release date: 2007-08-26
+Release notes: This fith stable release contains a couple of new features:
+- enhanced support for CDATA sections
+  (see the CDATA SECTION prefix)
+- enhanced support for binary data via base64 encoding
+  (see the BASE64 ENCODING prefix; thanks to Thomas Haslbeck
+  for making me implement this feature)
+- support for dynamic XML element names determined at run time
+  (see the dynamicRowTag option; thanks to John P. McCaskey for
+  requesting this feature)
+- XML_Query2XML now comes with 913 phpt unit tests
+
+v1.2.1
+------
+Release date: 2007-05-26
+Release notes: This fourth stable release contains only some small enhancements:
+- dumping the data of all the tables in your database is now easier;
+  there is also a new section in the tutorial that describes how to do this:
+  http://query2xml.sf.net/docs/html/XML_Query2XML/tutorial_XML_Query2XML.pkg.html#dumpdatabase
+  Thanks to vikram dot melonfire at gmail dot com for raising the issue of database dumps
+- $sql and $options['idColumn'] now also accept a value of false
+- XML_Query2XML now comes with 803 phpt unit tests
+
+v1.2.0
+------
+Release date: 2007-04-15
+Release notes: This third stable release contains a new feature and some minor
+coding-style related changes.
+- it is now possible to handle data sources that use another character encoding
+  than ISO-8859-1; see the 'encoder' option:
+  http://query2xml.sf.net/docs/html/XML_Query2XML/tutorial_XML_Query2XML.pkg.html#query2xml_getxml.options_encoder
+  Thanks to Mickael Guerin for making me implement this feature that has been sitting on my
+  todo list for quite some time now.
+- other character encodings than UTF-8 can now also be used for XML encoding; see
+  http://query2xml.sf.net/docs/html/XML_Query2XML/tutorial_XML_Query2XML.pkg.html#encoding
+- unit tests are now correctly skipped if the database connection fails
+- XML_Query2XML now comes with 783 phpt unit tests
+
+v1.1.0
+------
+Release date: 2007-02-03
+Release notes: This second stable release contains a couple of great new features:
+- it's now possible to integrate other XML data sources (e.g. XML stored in the DB)
+  - XML unserialization support: see the ampersand prefix
+  - you can now return DOMNode instances from callback functions
+- non-static methods can now be used as callbacks by
+  implementing the new XML_Query2XML_Callback interface
+
+The smaller changes include:
+- cleaned up API docs
+- hidden_container_prefix can now be set using setGlobalOption()
+- numerous CS fixes in the tutorial
+- now using MDB2 instead of DB in all examples
+- documented multi-column primary key support
+- now comes with 678 unit tests (tested with MySQL and PostgreSQL)
+
+v1.0.0
+------
+Release date: 2006-12-04
+Release notes: I am very proud to announce the first stable
+release of XML_Query2XML.
+
+This release introduces only one minor change. It's not
+a bug fix but just a matter of clean code. The patch
+was anonymously submitted via the project's sourceforge site
+(Note: pear.php.net should be used instead).
+
+If you are upgrading from v0.6.x or v0.7.x, please read
+http://query2xml.sf.net/docs/html/XML_Query2XML/tutorial_XML_Query2XML.pkg.html#migration
+
+v0.8.0
+------
+Release date: 2006-11-04
+Release notes: This release is *NOT BACKWARD COMPATIBLE*.
+I'm sorry for the BC break, but due to security considerations XML_Query2XML
+does not use the native function eval() anymore. Therefore
+- the "!" prefix is not supported anymore
+- the behaviour of the "condition" option was changed
+- the new callback prefix "#" was added (use it instead of the "!" prefix)
+
+A migration strategy is documented at
+http://query2xml.sf.net/docs/html/XML_Query2XML/tutorial_XML_Query2XML.pkg.html#migration
+
+Also:
+- unit tests were migrated from PHPUnit2 to phpt
+- XML_Query2XML now comes with 433 unit tests
+- migrated from package.xml version 1.0 to version 2.0
+
+v0.7.0
+------
+Release date: 2006-10-14
+Release notes:
+This release adds support for ADOdb (adodb.sf.net).
+ADOdb can be used with different error handling mechanisms:
+- default: methods return false on failure; these errors
+  will be caught by XML_Query2XML and an XML_Query2XML_DBException
+  will be thrown
+- PEAR_Error: methods return PEAR_Error on failure (or false
+  and require ADODB_Pear_Error() to be called);
+  XML_Query2XML will catch these errors and throw an
+  XML_Query2XML_DBException that contains the information provided
+  by the PEAR_Error instance.
+- exceptions: if an ADODB_Exception is thrown by ADOdb
+  XML_Query2XML will catch it and throw an XML_Query2XML_DBException
+
+This means that no matter which error handling mechanism is used within
+ADOdb, XML_Query2XML will behave the same. It will throw an
+XML_Query2XML_DBException in case of a database error.
+
+v0.6.1
+------
+Release date: 2006-09-28
+Release notes:
+This release fixes a minor bug with PHP5 prior to 5.1.0.
+Thanks a lot to Christophe Laratte <christophe dot laratte at openflyers dot org>;
+for reporting this!
+
+Bug fixes:
+- Fixed Bug #8799 "DB/common.php required": compatibility fix for
+  PHP5 &lt; 5.1.0: added class_exists() calls before using instanceof
+  operator in XML_Query2XML constructor;
+  see also: http://bugs.php.net/bug.php?id=29736
+
+v0.6.0
+------
+Release date: 2006-04-23
+Release notes:
+This release includes all changes recommeded during the PEPr voting process.
+Major changes:
+- asterisk shortcut that expands to all columns in the result set;
+  the tutorial was updated to document this feature and a new
+  case study (case 07) was added to provide a good example
+- implementation of ISO/IEC 9075-14:2005 for mapping SQL identifiers to
+  XML names; the tutorial was updates to document this feature and
+  a new case study (case 08) was added to provide lots of examples
+- new complex attribute specifications (from my own wish list)
+
+Minor changes:
+- simplification of the inner workings of the methods _hasDOMChild()
+  and _getDOMChild()
+- using foreach($array as $key => $value) instead of
+  while(list($key, $value) = each($array))
+- now comes with 168 unit tests
+
+v0.5.1
+------
+Release date: 2006-03-17
+Release notes:
+This release includes a couple of minor changes:
+- all lines now have a maximum length of 85 characters
+- no () with require_once
+- always using {} with code blocks
+- no silencing of any calls using @
+- using /* ... */ for all multi-line comments
+- enhanced documentation for private methods
+- code enhancements inside XML_Query2XML::getXML()
+
+v0.5.0
+------
+Release date: 2006-03-14
+Release notes:
+This release includes a couple of major changes:
+- full MDB2 support
+- all new exception handling: just three different
+  exceptions that all extend XML_Query2XML_Exception.
+- now comes with 99 PHPUnit2 unit tests
+- every exception that is thrown or bubbles up is
+  documented in the API-docs; the tutorial has a
+  new "Exception Handling" section.
+This release implements all recommendations made by
+PEAR developers during a first proposal.
+
+Minor changes include:
+- using ' instead of " where-ever possible
+- as PHP5 uses references for objects by default & (such as
+  in =&) is now only used where necessary.
+- the tutorial now renders just fine in all common browsers
+
+v0.4.0
+------
+Release date: 2006-02-28
+Release notes:
+This release includes one major change:
+- Public methods will now only throw exceptions that extend PEAR_Exception.
+  No PEAR errors or special XML will be returned anymore.
+  Therefore the public method XML_Query2XML::factory() now
+  only knows one argument.
+
+v0.3.0
+------
+Release date: 2006-02-25
+Release notes:
+This release includes two major changes:
+- XML_Query2XML now uses PHP5's DOM XML extension. Therefore
+  DomDocument, DomNode, etc are now used in favor of XML_Query2XML_XMLElement.
+  XML_Query2XML does not come with XML_Query2XML_XMLElement anymore!
+- Back to the roots! XML_Query2XML concentrates on its core features and
+  therefore drops the functionality of generating an XML schema from XML data.
+
+Minor changes:
+- reduction of unit tests (fewer public methods to test): 20
+- complete review of the tutorial and the API documentation
+- changes of testCases.sh: schema validation is not supported
+  anymore
+
+
+v0.2.0
+------
+Release date: 2006-02-08
+Release notes:
+The first public release v0.2.0 is available! 
+Just download the package and run `pear install <package_file>'.
+Alternatively you can also directly run
+`pear install http://query2xml.sourceforge.net/releases/XML_Query2XML-0.2.0.tgz'. 
+
+This release includes 
+- in-depth documentation: tutorials and API documentation
+- 6 case studies: from very simple to highly complex scenarios
+- 104 unit tests for PHPUnit
+- minor bug fixes
+- development was moved to sourceforge's CVS server

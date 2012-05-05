@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="basics.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423444000000000" remote="129423444000000000" />
+<file name="encoder_default.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423444000000000" remote="129423444000000000" />
+<file name="encoder_false.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423444000000000" remote="129423444000000000" />
+<file name="encoder_function.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423444000000000" remote="129423444000000000" />
+<file name="encoder_nonStaticMethod.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423444000000000" remote="129423444000000000" />
+<file name="encoder_null.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423444000000000" remote="129423444000000000" />
+<file name="encoder_overwritten_default_false.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423444000000000" remote="129423444000000000" />
+<file name="encoder_overwritten_default_false2.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423444000000000" remote="129423444000000000" />
+<file name="encoder_overwritten_default_false_function.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423444000000000" remote="129423444000000000" />
+<file name="encoder_overwritten_null_false_nonStaticMethodString.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423444000000000" remote="129423444000000000" />
+<file name="encoder_overwritten_null_false_staticMethodString.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423444000000000" remote="129423444000000000" />
+<file name="encoder_staticMethodArray.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423444000000000" remote="129423444000000000" />
+<file name="encoder_staticMethodString.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423444000000000" remote="129423444000000000" />
+<file name="throwXMLException.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423444000000000" remote="129423444000000000" />
+<file name="within_complexAttributeSpecificationValue.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423444000000000" remote="129423444000000000" />
+<file name="within_complexElementSpecificationValue.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423444000000000" remote="129423444000000000" />
+<file name="within_simpleAttributeSpecification.phpt" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423444000000000" remote="129423444000000000" />
+</dwsync>

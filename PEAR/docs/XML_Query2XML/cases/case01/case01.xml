@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<music_library>
+  <artist>
+    <artistid>1</artistid>
+    <name>Curtis Mayfield</name>
+    <birth_year>1920</birth_year>
+    <birth_place>Chicago</birth_place>
+    <genre>Soul</genre>
+  </artist>
+  <artist>
+    <artistid>2</artistid>
+    <name>Isaac Hayes</name>
+    <birth_year>1942</birth_year>
+    <birth_place>Tennessee</birth_place>
+    <genre>Soul</genre>
+  </artist>
+  <artist>
+    <artistid>3</artistid>
+    <name>Ray Charles</name>
+    <birth_year>1930</birth_year>
+    <birth_place>Mississippi</birth_place>
+    <genre>Country and Soul</genre>
+  </artist>
+</music_library>

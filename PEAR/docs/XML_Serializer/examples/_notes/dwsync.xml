@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="Serializer_Bug7112.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="example.xml" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="serializeAndEncode.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="serializeAndReturn.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="serializeCData.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="serializeIndexedArray.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="serializeIndexedArrayWithContext.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="serializeNullProperties.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="serializeObject.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="serializeRDF.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="serializeSelectiveAttributes.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="serializeWithAttributes.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="serializeWithAttributes2.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="serializeWithComment.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="serializeWithDtd.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="serializeWithIndentedAttributes.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="serializeWithNamespace.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="serializeWithTagMap.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="unserializeAnyXML.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="unserializeClassNames.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="unserializeEncoded.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="unserializeEnum.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="unserializeObject.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="unserializeRDF.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="unserializeWhitespace.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="unserializeWithAttributes.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="unserializeWithTagMap.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+<file name="unserializeWithTypeGuessing.php" server="diecasthobbyshop.com/diecasthobbyshop.com/" local="129423426600000000" remote="129423426600000000" />
+</dwsync>
