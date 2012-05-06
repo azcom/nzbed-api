@@ -1,7 +1,7 @@
 <?php
 
 
-$path = 'C:/xampp/htdocs/nzbed/pear'; // Path to nzbed pear folder
+$path = 'C:/xampp/htdocs/nzbed/PEAR'; // Path to nzbed PEAR folder
 
 set_include_path(get_include_path() . PATH_SEPARATOR . $path);
 ini_set("display_errors", 0);
