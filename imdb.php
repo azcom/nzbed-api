@@ -58,9 +58,9 @@ class imdb
 				'plot' => '/<h2>Storyline<\/h2>\s*<p>(.+?)<em class="nobr">/i',
 				'crew' => '/(?:<h5><a class="glossary" name=".+?" href="\/glossary\/.#(\w+)">.+?<\/a><\/h5><\/td><\/tr>)?<tr>\s*<td valign="top"><a href="\/name\/(nm\d+)\/">(.+?)<\/a><\/td><td(?: valign="top"(?: nowrap="1")?)?>.+?<\/td><td valign="top">(?:<a href=".+?\/glossary\/.+?">)?([^<]+)/i',
 				'country' => '/<a href="\/country\/([^\/]+)" >.+?<\/a>/i',
-				'akaInt' => '/<td>(.*)<\/td>\s*<td>(.*)International/i',	//Priority goes to international title
-				'akaUS' => '/<td>(.*)<\/td>\s*<td>(.*)USA/i',				//then us
-				'akaUK' => '/<td>(.*)<\/td>\s*<td>(.*)UK/i',				//then uk
+				'akaInt' => '/<td>(.*)<\/td>\s*<td>(.*)International/i',	        //Priority goes to international title
+				'akaUS' => '/<td>(.*)<\/td>\s*<td>(.*)USA \(imdb display title\)/i',	//then us
+				'akaUK' => '/<td>(.*)<\/td>\s*<td>(.*)UK \(imdb display title\)/i',	//then uk
 				'original' => '/<td>(.*)<\/td>\s*<td>(.*) \(original title\)<\/td>/i',
 				'imdb_display' => '/<title>(.*) \(\d+\) - Release dates<\/title>/i'
 			),
