@@ -82,6 +82,7 @@ class imdb
 	function getUrl( $url, $redir = false )
 	{
 		$req =& new HTTP_Request( );
+		$req->addHeader("Accept-Language", "en-US,en;q=0.8"); // Forces US language result to avoid issues when nzbed is hosted on servers in non-english countries
 		$req->setMethod(HTTP_REQUEST_METHOD_GET);
 		$req->setURL( $url, array( 'timeout' => '30', 'readTimeout' => 30, 'allowRedirects' => $redir ) );
 		$request = $req->sendRequest();
